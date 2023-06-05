@@ -10,8 +10,6 @@ const searchFolder = 'C:\\Users\\VitaliyPC\\Desktop\\all';
 // Имя папки, в которую будут сохранены найденные файлы   
 const destinationFolder = 'C:\\Users\\VitaliyPC\\Desktop\\test';
 
-
-// Массив с неполными названиями файлов для поиска
 const fileNames = [
     '6707',
     '6711',
