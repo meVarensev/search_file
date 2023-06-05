@@ -80,5 +80,4 @@ function searchFiles(folderPath) {
   });
 }
 
-// Запуск поиска файлов
 searchFiles(searchFolder);
