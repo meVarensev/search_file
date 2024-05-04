@@ -53,9 +53,8 @@ new_path = Path(args.destination)
 new_path.mkdir(parents=False, exist_ok=True)
 for file in current_files:
     for names in DATA:
-        for int_range in range(names["start"], names["end"] + 1):
-            if str(int_range) in file.name:
-                shutil.copy(file, new_path)
-                new_file = new_path / file.name
-                print(f'{names["name"].replace(" ", "_")}_{new_file.name}')
-                new_file.rename(Path(new_file.parent, f'{names["name"].replace(" ", "_")}_{new_file.name}'))
+        if str(names["start"]) in file.name or str(names["end"]) in file.name:
+            shutil.copy(file, new_path)
+            new_file = new_path / file.name
+            print(f'{names["name"].replace(" ", "_")}_{new_file.name}')
+            new_file.rename(Path(new_file.parent, f'{names["name"].replace(" ", "_")}_{new_file.name}'))
