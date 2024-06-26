@@ -71,3 +71,9 @@ python3 replace_files.py --source <Путь до исходной папки с 
 * Поддерживаемые форматы изображений: JPEG, PNG, GIF.
 * При использовании скрипта убедитесь, что папка с фотографиями содержит только нужные файлы, поскольку скрипт будет обрабатывать все файлы с расширениями JPEG, PNG и GIF.
 * Убедитесь, что у вас есть достаточно свободного места на диске для сохранения обработанных фотографий.
+
+
+
+``` 
+ C:\Users\VitaliyPC\AppData\Local\Programs\Python\Launcher\py.exe C:\Users\VitaliyPC\Desktop\search_file\replace_files.py --source "D:\WORK\2024\35шк 9б в студии\все фото" --destination C:\Users\VitaliyPC\Desktop\search_file\test
+```
